@@ -1,0 +1,107 @@
+python bench_covertype.py
+===========================
+Classifier   train-time test-time error-rate
+--------------------------------------------
+CART          6.8731s    0.0116s     0.0424  
+liblinear     4.3188s    0.0072s     0.2305  
+SGD           0.2960s    0.0244s     0.2315  
+GaussianNB    0.3585s    0.0419s     0.4841  
+
+
+python bench_covertype.py --classifiers ExtraTrees --n-jobs 1
+===========================
+Classifier   train-time test-time error-rate
+--------------------------------------------
+ExtraTrees    22.0710s   0.3468s     0.0372  
+
+
+python bench_covertype.py --classifiers ExtraTrees --n-jobs 2
+===========================
+Classifier   train-time test-time error-rate
+--------------------------------------------
+ExtraTrees    12.4086s   0.3312s     0.0372  
+
+
+python bench_covertype.py --classifiers ExtraTrees --n-jobs 4
+===========================
+Classifier   train-time test-time error-rate
+--------------------------------------------
+ExtraTrees    9.1098s    0.2537s     0.0372  
+
+
+python bench_covertype.py --classifiers ExtraTrees --n-jobs 8
+===========================
+Classifier   train-time test-time error-rate
+--------------------------------------------
+ExtraTrees    7.8867s    0.2251s     0.0372  
+
+
+python bench_covertype.py --classifiers RandomForest --n-jobs 1
+===========================
+Classifier   train-time test-time error-rate
+--------------------------------------------
+RandomForest  19.9885s   0.2347s     0.0330  
+
+
+python bench_covertype.py --classifiers RandomForest --n-jobs 2
+===========================
+Classifier   train-time test-time error-rate
+--------------------------------------------
+RandomForest  15.5255s   0.2145s     0.0330  
+
+
+python bench_covertype.py --classifiers RandomForest --n-jobs 4
+===========================
+Classifier   train-time test-time error-rate
+--------------------------------------------
+RandomForest  9.4432s    0.1105s     0.0330  
+
+
+python bench_covertype.py --classifiers RandomForest --n-jobs 8
+===========================
+Classifier   train-time test-time error-rate
+--------------------------------------------
+RandomForest  8.2592s    0.1364s     0.0330  
+
+
+python bench_random_projections.py 
+Benchmarks
+===========================
+Generate dataset benchmarks... done
+Perform benchmarks for GaussianRandomProjection...
+	iter 0...done
+	iter 1...done
+	iter 2...done
+	iter 3...done
+	iter 4...done
+Perform benchmarks for SparseRandomProjection...
+	iter 0...done
+	iter 1...done
+	iter 2...done
+	iter 3...done
+	iter 4...done
+
+Script arguments
+===========================
+Arguments        	 |    Value     
+-------------------------|--------------
+random_seed      	 |      13      
+density          	 | 0.333333333333 
+eps              	 |     0.5      
+ratio_nonzeros   	 |    0.001     
+n_components     	 |     auto     
+n_samples        	 |     500      
+dense            	 |    False     
+n_times          	 |      5       
+selected_transformers 	 | GaussianRandomProjection,SparseRandomProjection 
+n_features       	 |    10000     
+
+Transformer performance:
+===========================
+Results are averaged over 5 repetition(s).
+
+Transformer                    |     fit      |  transform  
+-------------------------------|--------------|--------------
+GaussianRandomProjection       |   1.7128s    |   0.5057s   
+SparseRandomProjection         |   0.1318s    |   0.3727s   
+

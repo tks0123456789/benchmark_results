@@ -1,0 +1,49 @@
+lsb_release -a
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 14.04.4 LTS
+Release:	14.04
+Codename:	trusty
+
+
+sudo lshw -short
+H/W path        デバイス  クラス      詳細
+===================================================
+                              system         All Series (All)
+/0                            bus            H97-PRO
+/0/0                          memory         64KiB BIOS
+/0/46                         memory         32GiB システムメモリー
+/0/46/0                       memory         8GiB DIMM DDR3 同期 1600 MHz (0.6 ns)
+/0/46/1                       memory         8GiB DIMM DDR3 同期 1600 MHz (0.6 ns)
+/0/46/2                       memory         8GiB DIMM DDR3 同期 1600 MHz (0.6 ns)
+/0/46/3                       memory         8GiB DIMM DDR3 同期 1600 MHz (0.6 ns)
+/0/55                         processor      Intel(R) Core(TM) i7-4790K CPU @ 4.00GHz
+/0/55/56                      memory         256KiB L1 キャッシュ
+/0/55/57                      memory         1MiB L2 キャッシュ
+/0/55/58                      memory         8MiB L3 キャッシュ
+/0/100                        bridge         4th Gen Core Processor DRAM Controller
+/0/100/1                      bridge         Xeon E3-1200 v3/4th Gen Core Processor PCI Express x16 Controller
+/0/100/1/0                    display        GK106 [GeForce GTX 660]
+/0/100/1/0.1                  multimedia     GK106 HDMI Audio Controller
+/0/100/14                     bus            9 Series Chipset Family USB xHCI Controller
+/0/100/16                     communication  9 Series Chipset Family ME Interface #1
+/0/100/19       eth0          network        Ethernet Connection (2) I218-V
+/0/100/1a                     bus            9 Series Chipset Family USB EHCI Controller #2
+/0/100/1b                     multimedia     9 Series Chipset Family HD Audio Controller
+/0/100/1c                     bridge         9 Series Chipset Family PCI Express Root Port 1
+/0/100/1c.3                   bridge         82801 PCI Bridge
+/0/100/1c.3/0                 bridge         ASM1083/1085 PCIe to PCI Bridge
+/0/100/1d                     bus            9 Series Chipset Family USB EHCI Controller #1
+/0/100/1f                     bridge         9 Series Chipset Family H97 Controller
+/0/100/1f.2                   storage        9 Series Chipset Family SATA Controller [AHCI Mode]
+/0/100/1f.3                   bus            9 Series Chipset Family SMBus Controller
+/0/1            scsi0         storage        
+/0/1/0.0.0      /dev/sda      disk           2TB WDC WD20EZRX-00D
+/0/1/0.0.0/1    /dev/sda1     volume         500MiB Windows NTFS ボリューム
+/0/1/0.0.0/2    /dev/sda2     volume         194GiB Windows NTFS ボリューム
+/0/1/0.0.0/3    /dev/sda3     volume         1374GiB Windows NTFS ボリューム
+/0/1/0.0.0/4    /dev/sda4     volume         292GiB Extended partition
+/0/1/0.0.0/4/5  /dev/sda5     volume         30GiB Linux swap / Solaris partition
+/0/1/0.0.0/4/6  /dev/sda6     volume         262GiB Linux filesystem partition
+/1                            power          To Be Filled By O.E.M.
+/2              wlan0         network        無線インターフェース
