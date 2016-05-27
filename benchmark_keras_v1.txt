@@ -503,6 +503,27 @@ Test score: 0.354021408424
 Test accuracy: 0.848999991179
 
 
+python imdb_bidirectional_lstm.py
+Using Theano backend.
+Using gpu device 0: GeForce GTX 660 (CNMeM is disabled, cuDNN not available)
+Loading data...
+20000 train sequences
+5000 test sequences
+Pad sequences (samples x time)
+X_train shape: (20000, 100)
+X_test shape: (5000, 100)
+Train...
+Train on 20000 samples, validate on 5000 samples
+Epoch 1/4
+20000/20000 [==============================] - 89s - loss: 0.4595 - acc: 0.7763 - val_loss: 0.3695 - val_acc: 0.8282
+Epoch 2/4
+20000/20000 [==============================] - 90s - loss: 0.2459 - acc: 0.9023 - val_loss: 0.3844 - val_acc: 0.8362
+Epoch 3/4
+20000/20000 [==============================] - 90s - loss: 0.1291 - acc: 0.9539 - val_loss: 0.4482 - val_acc: 0.8210
+Epoch 4/4
+20000/20000 [==============================] - 90s - loss: 0.0540 - acc: 0.9825 - val_loss: 0.6642 - val_acc: 0.8314
+
+
 python reuters_mlp.py
 Using Theano backend.
 Using gpu device 0: GeForce GTX 660 (CNMeM is disabled, cuDNN not available)
@@ -621,27 +642,6 @@ Epoch 39/40
 60000/60000 [==============================] - 2s - loss: 0.0044 - acc: 0.9995 - val_loss: 0.0541 - val_acc: 0.9848
 Epoch 40/40
 60000/60000 [==============================] - 2s - loss: 0.0045 - acc: 0.9995 - val_loss: 0.0550 - val_acc: 0.9848
-
-
-python imdb_bidirectional_lstm.py
-Using Theano backend.
-Using gpu device 0: GeForce GTX 660 (CNMeM is disabled, cuDNN not available)
-Loading data...
-20000 train sequences
-5000 test sequences
-Pad sequences (samples x time)
-X_train shape: (20000, 100)
-X_test shape: (5000, 100)
-Train...
-Train on 20000 samples, validate on 5000 samples
-Epoch 1/4
-20000/20000 [==============================] - 89s - loss: 0.4595 - acc: 0.7763 - val_loss: 0.3695 - val_acc: 0.8282
-Epoch 2/4
-20000/20000 [==============================] - 90s - loss: 0.2459 - acc: 0.9023 - val_loss: 0.3844 - val_acc: 0.8362
-Epoch 3/4
-20000/20000 [==============================] - 90s - loss: 0.1291 - acc: 0.9539 - val_loss: 0.4482 - val_acc: 0.8210
-Epoch 4/4
-20000/20000 [==============================] - 90s - loss: 0.0540 - acc: 0.9825 - val_loss: 0.6642 - val_acc: 0.8314
 
 
 python cifar10_cnn.py 

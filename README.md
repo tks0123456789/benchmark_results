@@ -1,14 +1,15 @@
 
-## benchmark_keras_v1.txt
-|file name                 | s/epoch|
-|--------------------------|--------|
-|mnist_mlp.py              |     2s |
-|mnist_cnn.py              |    26s |
-|imdb_lstm.py              |    49s |
-|imdb_cnn.py               |    15s |
-|imdb_cnn_lstm.py          |    34s |
-|imdb_bidirectional_lstm.py|    90s |
-|cifar10_cnn.py            |    76s |
+v2: v1 + cuDnn 5005
+## benchmark_keras(s/epoch)
+|file name                 |   v1   |   v2   |
+|--------------------------|--------|--------|
+|mnist_mlp.py              |     2s |        |
+|mnist_cnn.py              |    26s |     10s|
+|imdb_lstm.py              |    49s |     49s|
+|imdb_cnn.py               |    15s |     10s|
+|imdb_cnn_lstm.py          |    34s |     30s|
+|imdb_bidirectional_lstm.py|    90s |     92s|
+|cifar10_cnn.py            |    76s |     31s|
 
 ## benchmark_sklearn_v1.txt
 bench_covertype.py
@@ -38,5 +39,5 @@ bench_covertype.py
 * Theano==0.8.2
 * Keras==1.0.2
 * scikit-learn==0.17.1
-* scipy==0.13.3
-* numpy==1.8.2
+* scipy==0.17.1
+* numpy==1.11.0
