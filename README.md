@@ -1,15 +1,15 @@
 
 v2: v1 + cuDnn 5005
 ## benchmark_keras(s/epoch)
-|file name                 |   v1   |   v2   |
-|--------------------------|--------|--------|
-|mnist_mlp.py              |     2s |        |
-|mnist_cnn.py              |    26s |     10s|
-|imdb_lstm.py              |    49s |     49s|
-|imdb_cnn.py               |    15s |     10s|
-|imdb_cnn_lstm.py          |    34s |     30s|
-|imdb_bidirectional_lstm.py|    90s |     92s|
-|cifar10_cnn.py            |    76s |     31s|
+|file name                 |   v1   |   v2   |   v3   |
+|--------------------------|--------|--------|--------|
+|mnist_mlp.py              |     2s |        |      1s|
+|mnist_cnn.py              |    26s |     10s|      3s|
+|imdb_lstm.py              |    49s |     49s|     35s|
+|imdb_cnn.py               |    15s |     10s|      3s|
+|imdb_cnn_lstm.py          |    34s |     30s|     20s|
+|imdb_bidirectional_lstm.py|    90s |     92s|     61s|
+|cifar10_cnn.py            |    76s |     31s|     16s|
 
 ## benchmark_sklearn_v1.txt
 bench_covertype.py
