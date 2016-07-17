@@ -1,5 +1,22 @@
 
-v2: v1 + cuDnn 5005
+##
+|            |    v1    |    v2    |    v3    |
+|------------|----------|----------|----------|
+|CPU         |i7 4790k  |  <<==    |  <<==    |
+|MEM         |     32G  |  <<==    |  <<==    |
+|GPU         |GTX 660   |  <<==    |GTX 1070  |
+|Ubuntu      |14.04.4LTS|  <<==    |  <<==    |
+|VGA driver  |361.42    |  <<==    |367.35    |
+|CUDA        |7.5       |  <<==    |8.0RC     |
+|cuDNN       |NA        |5005      |  <<==    |
+|Python      |2.7.6     |  <<==    |  <<==    |
+|Theano      |0.8.2     |  <<==    |  <<==    |
+|Keras       |1.0.2     |  <<==    |1.0.4     |
+|scikit-learn|0.17.1    |  <<==    |  <<==    |
+|scipy       |0.17.1    |  <<==    |  <<==    |
+|numpy       |1.11.0    |  <<==    |  <<==    |
+
+
 ## benchmark_keras(s/epoch)
 |file name                 |   v1   |   v2   |   v3   |
 |--------------------------|--------|--------|--------|
@@ -29,15 +46,4 @@ bench_covertype.py
 |RandomForest|  9.4432s | 0.1105s |   0.0330 |     4|
 |RandomForest|  8.2592s | 0.1364s |   0.0330 |     8|
 
-## Environment[v1]
-* CPU: i7 4790k
-* MEM: 32G
-* GPU: GTX660
-* OS : Ubuntu 14.04.4 LTS
-* CUDA: 7.5
-* Python 2.7.6
-* Theano==0.8.2
-* Keras==1.0.2
-* scikit-learn==0.17.1
-* scipy==0.17.1
-* numpy==1.11.0
+
